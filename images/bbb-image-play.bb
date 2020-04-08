@@ -1,7 +1,7 @@
 SUMMARY = "A small image just capable of allowing a device to and play."
 
 CORE_IMAGE_EXTRA_INSTALL += " hello-lib hello-application openssh" 
-
+TOOLCHAIN_TARGET_TASK_append = " kernel-devsrc"
 IMAGE_INSTALL = "packagegroup-core-boot ${CORE_IMAGE_EXTRA_INSTALL}"
 
 IMAGE_LINGUAS = " "
