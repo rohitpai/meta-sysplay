@@ -20,8 +20,10 @@ SRCREV = "${AUTOREV}"
 
 DEPENDS += "\
     hello-lib \
+    systemd \
 "
 
 RDEPENDS_${PN} += "\
     hello-lib \
+    systemd \
 "
