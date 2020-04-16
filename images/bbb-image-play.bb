@@ -14,6 +14,7 @@ IMAGE_ROOTFS_SIZE ?= "8192"
 IMAGE_ROOTFS_EXTRA_SPACE_append = "${@bb.utils.contains("DISTRO_FEATURES", "systemd", " + 4096", "" ,d)}"
 
 
-KERNEL_DEVICETREE_beaglebone += " \
+KERNEL_DEVICETREE += " \
     am335x-boneblack-play.dtb \
 "
+IMAGE_INSTALL += " kernel-module-i2cplay kernel-module-mcp320x"
