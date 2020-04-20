@@ -1,0 +1,13 @@
+diff --git a/cmd/Makefile b/cmd/Makefile
+index a8abe952a3..345589b62c 100644
+--- a/cmd/Makefile
++++ b/cmd/Makefile
+@@ -183,7 +183,7 @@ endif # !CONFIG_SPL_BUILD
+ 
+ # core command
+ obj-y += nvedit.o
+-
++obj-y += custom.o
+ obj-$(CONFIG_CMD_ELF) += elf.o
+ obj-$(CONFIG_TI_COMMON_CMD_OPTIONS) += ti/
+ 
