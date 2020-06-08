@@ -18,3 +18,6 @@ KERNEL_DEVICETREE += " \
     am335x-boneblack-play.dtb \
 "
 IMAGE_INSTALL += " kernel-module-i2cplay kernel-module-mcp320x"
+
+IMAGE_INSTALL_append = " libstdc++"
+TOOLCHAIN_TARGET_TASK_append = " libstdc++-staticdev"
