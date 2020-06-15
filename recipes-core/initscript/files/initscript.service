@@ -1,0 +1,10 @@
+[Unit]
+Description=start initscript upon boot
+Before=rauc.service
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c '/usr/sbin/initscript.sh'
+
+[Install]
+WantedBy=multi-user.target rauc.service
