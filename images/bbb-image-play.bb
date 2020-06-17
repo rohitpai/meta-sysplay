@@ -31,7 +31,7 @@ TOOLCHAIN_TARGET_TASK_append = " libstdc++-staticdev"
 
 # Utils 
 IMAGE_INSTALL += " e2fsprogs dosfstools e2fsprogs-mke2fs util-linux-mkfs u-boot-fw-utils"
-IMAGE_INSTALL += " rauc"
+IMAGE_INSTALL += " rauc redis hiredis"
 
 
 
