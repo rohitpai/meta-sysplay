@@ -33,6 +33,8 @@ TOOLCHAIN_TARGET_TASK_append = " libstdc++-staticdev"
 IMAGE_INSTALL += " e2fsprogs dosfstools e2fsprogs-mke2fs util-linux-mkfs u-boot-fw-utils"
 IMAGE_INSTALL += " rauc redis hiredis"
 
-
+#initram fs 
+#IMAGE_FSTYPES = "${INITRAMFS_FSTYPES}"
+#PACKAGE_INSTALL = "${IMAGE_INSTALL}"
 
 
