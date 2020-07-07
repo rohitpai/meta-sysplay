@@ -26,12 +26,12 @@ IMAGE_ROOTFS_EXTRA_SPACE_append = "${@bb.utils.contains("DISTRO_FEATURES", "syst
 #IMAGE_FEATURES_append = " read-only-rootfs"
 IMAGE_INSTALL += " kernel-module-i2cplay kernel-module-mcp320x"
 IMAGE_INSTALL_append = " libstdc++ libgpiod initscript"
-TOOLCHAIN_TARGET_TASK_append = " libstdc++-staticdev libcoap-staticdev"
+TOOLCHAIN_TARGET_TASK_append = " libstdc++-staticdev libcoap-staticdev cppzmq-dev"
 
 
 # Utils 
 IMAGE_INSTALL += " e2fsprogs dosfstools e2fsprogs-mke2fs util-linux-mkfs u-boot-fw-utils"
-IMAGE_INSTALL += " rauc redis hiredis pacman4console libcoap"
+IMAGE_INSTALL += " rauc redis hiredis pacman4console libcoap zeromq-dev"
 
 
 #initram fs 
